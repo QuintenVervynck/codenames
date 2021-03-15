@@ -1,0 +1,51 @@
+.gameboard {
+    border: black 10px;
+    align-content: center;
+    align-items: center;
+    margin: 5% 15%;
+}
+.table {
+    width: 100%;
+}
+.td {
+    width: 15em;
+}
+.word_btn {
+    width: 100%;
+    border: 4px solid gray;
+    text-align: center;
+    border-radius: 25%;
+    background-color: beige;
+    outline: none;
+}
+.clickable:hover {
+    opacity: 50%;
+}
+.clickable:focus {
+    opacity: 100%;
+}
+.picked {
+
+}
+.spymaster {
+    opacity: 50%;
+}
+.red {
+    background-color: darksalmon;
+}
+.blue {
+    background-color: lightblue;
+}
+.neutral {
+    background-color: darkkhaki;
+}
+.assassin {
+    background-color: black;
+    color: white;
+}
+.assassin .h3 {
+    color: white;
+}
+.invis {
+    visibility: hidden;
+}

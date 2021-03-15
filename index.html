@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- no, i do not use jquery -->
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="index.css?rnd132">
+
+    <!-- codnames JS -->
+    <script src="codenames.js"></script>
+
+    <title>Codenames</title>
+</head>
+
+
+<body>
+
+    <div>
+        <br>
+        <button onclick="codenames.newGame()">Create a new game</button>
+        <br><br>
+        <label for="inputCode">Code: </label><input id="inputCode" type="text">
+        <button onclick="codenames.connect(document.getElementById('inputCode').value)">Connect</button>
+    </div>
+
+    <br>
+
+    <div id="game_control" class="invis">
+        <label id="current_code_label"></label>
+        <br><br>
+        <label id="team_label"></label>
+        <br><br>
+        <button id="spymaster_toggle" onclick="codenames.toggleSpymaster()">Make me spymaster</button>
+        <br><br>
+        <button onclick="codenames.endTurn()">End turn</button>
+    </div>
+
+    <h1 id="winner_label"></h1>
+
+
+
+    <div id="gameboard" class="gameboard"></div>
+
+
+    <script>
+        let codenames = new Codenames();
+    </script>
+
+</body>
+</html>
